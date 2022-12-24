@@ -7,7 +7,7 @@ import Animated, {
 } from "react-native-reanimated";
 import { Rect } from "react-native-svg";
 
-import { AnimatedRectProps } from "../types/AnimatedType";
+import { AnimatedRectProps } from "../../types/appTypes";
 
 const AnimatedSvgRect = Animated.createAnimatedComponent(Rect);
 

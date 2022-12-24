@@ -3,8 +3,8 @@ import { Box, useTheme } from "native-base";
 import Svg, { ClipPath, Defs, G, Rect } from "react-native-svg";
 import { Easing, useSharedValue, withTiming } from "react-native-reanimated";
 
-import AnimatedRect from "./AnimatedRect";
-import AnimatedPath from "./AnimatedPath";
+import AnimatedRect from "./CustomAnimatedComponent/AnimatedRect";
+import AnimatedPath from "./CustomAnimatedComponent/AnimatedPath";
 
 interface CustomCheckboxProps {
   checked: boolean;

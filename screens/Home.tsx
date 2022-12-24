@@ -1,8 +1,7 @@
-import { Box, Text } from "native-base";
+import { Box } from "native-base";
 import React, { useCallback, useState } from "react";
-import { TouchableOpacity } from "react-native";
 
-import CustomCheckbox from "../components/CustomCheckbox";
+import TaskItem from "../components/TaskItem";
 
 const Home = () => {
   const [checked, setChecked] = useState<boolean>(false);
@@ -11,9 +10,9 @@ const Home = () => {
   }, [checked]);
   return (
     <Box safeArea pl={10} pt={10}>
-      <TouchableOpacity onPress={onHandleCheckboxAction}>
-        <CustomCheckbox checked={checked} />
-      </TouchableOpacity>
+      <TaskItem onPress={onHandleCheckboxAction} isDone={checked}>
+        This is a test todo application
+      </TaskItem>
     </Box>
   );
 };

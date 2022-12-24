@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Animated, { Easing, useAnimatedProps } from "react-native-reanimated";
 import { Path } from "react-native-svg";
 
-import { AnimatedRectProps } from "../types/AnimatedType";
+import { AnimatedRectProps } from "../../types/appTypes";
 
 const AnimatedSvgPath = Animated.createAnimatedComponent(Path);
 
