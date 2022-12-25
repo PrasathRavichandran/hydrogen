@@ -1,4 +1,5 @@
 import React from "react";
+import { PanGestureHandlerProps } from "react-native-gesture-handler";
 import Animated from "react-native-reanimated";
 import { PathProps } from "react-native-svg";
 
@@ -9,8 +10,10 @@ export interface AnimatedRectProps extends PathProps {
   strokeWidth?: number;
 }
 
-export interface TaskItemProps {
+export interface TaskItemProps
+  extends Pick<PanGestureHandlerProps, "simultaneousHandlers"> {
   children?: React.ReactNode;
   onPress?: () => void;
   isDone: boolean;
+  onRemove?: () => void;
 }

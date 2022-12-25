@@ -10,7 +10,11 @@ const Home = () => {
   }, [checked]);
   return (
     <Box safeArea pl={10} pt={10}>
-      <TaskItem onPress={onHandleCheckboxAction} isDone={checked}>
+      <TaskItem
+        onPress={onHandleCheckboxAction}
+        isDone={checked}
+        onRemove={() => {}}
+      >
         This is a test todo application
       </TaskItem>
     </Box>

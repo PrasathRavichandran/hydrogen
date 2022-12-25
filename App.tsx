@@ -1,3 +1,4 @@
+import "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
 import { NativeBaseProvider } from "native-base";
 import Home from "./screens/Home";
